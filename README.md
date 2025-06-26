@@ -9,7 +9,7 @@ This project simulates a basic academic database for storing student performance
 - `grades` – Records student grades linked to student and subject IDs
 
 ## Preview 📷 
-```
+```sql
 SELECT s.name, AVG(g.grade) AS avg_grade
 FROM students s
 JOIN grades g ON s.student_id = g.student_id
