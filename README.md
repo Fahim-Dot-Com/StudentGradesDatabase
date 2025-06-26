@@ -8,6 +8,14 @@ This project simulates a basic academic database for storing student performance
 - `subjects` – Contains subject names
 - `grades` – Records student grades linked to student and subject IDs
 
+## Preview 📷 
+```
+SELECT s.name, AVG(g.grade) AS avg_grade
+FROM students s
+JOIN grades g ON s.student_id = g.student_id
+GROUP BY s.name;
+```
+
 ## ⚙️ Technologies Used
 
 - PostgreSQL
