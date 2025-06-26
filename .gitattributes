@@ -1,0 +1,12 @@
+# Treat all *.sql files as text
+*.sql text
+
+# Treat README as UTF-8
+README.md text eol=lf
+
+# Enforce LF for shell scripts or other Unix tools if added later
+*.sh text eol=lf
+
+# Avoid diffing binary files if added later
+*.png binary
+*.jpg binary
